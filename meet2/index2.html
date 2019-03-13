@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	password: <input type="text" id="password"><br>
+	re-password: <input type="text" id="rePassword"><br>
+	<button onclick='cek()'>Submit</button><br>
+	<h1 id="hasil"></h1>
+	<script type="text/javascript">
+		// var nilai = 65;
+		// if (nilai>=80) {
+		// 	alert("nilai A");
+		// } else if (nilai<80 && nilai>=70) {
+		// 	alert("nilai B");
+		// } else if (nilai<70 && nilai>=60) {
+		// 	alert("nilai C");
+		// }
+
+		//cth or & and
+		var ownKTP = true;
+		var ownSIM = false;
+		// if (true || false) {
+		// 	alert("saya bisa beli tiket");
+		// }
+
+		if (true && false) {
+			alert("saya bisa beli tiket");	
+		}
+
+
+		function cek(){
+			var pass = document.getElementById("password").value;
+			var rePass = document.getElementById("rePassword").value;
+			console.log("pass :", pass, "rePass :", rePass);
+			if (pass == rePass) {
+				alert("Ya");
+			} else{
+				alert("Tidak");
+			}
+		}
+	</script>
+
+</body>
+</html>

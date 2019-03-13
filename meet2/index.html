@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	A: <input type="text" id="nilaiA"><br>
+	B: <input type="text" id="nilaiB"><br>
+	<button onclick='tambah()'>Tambah</button><br>
+	<h1 id="hasil"></h1>
+	<script type="text/javascript">
+		//Tipe data string
+		var hari = "Rabu";
+		//set html
+		//document.getElementById("h1").innerHTML = hari;
+
+		//get html
+		//var nilai = document.getElementById("nilai").value;
+		//alert(nilai);
+
+		//function getData(){
+		//	alert(document.getElementById("nilai").value);
+		//};
+
+		function tambah(){
+			var dataA = document.getElementById("nilaiA").value;
+			var dataB = document.getElementById("nilaiB").value;
+			console.log(dataA, dataB);
+			var total = Number(dataA) + Number(dataB);
+			document.getElementById("hasil").innerHTML = total;
+		}
+
+		//Tipe data number
+		var jam = 10;
+		//Tipe data boolean
+
+
+		var uangToni = 10000;
+		var uangAnto = 20000;
+		var totalUang = uangToni + uangAnto;
+
+		//akan muncul alert
+		//alert("Total Uang : "+totalUang);
+
+		//akan muncul prompt
+		//var total = prompt("Total Uang");
+		//console.log(total);
+	</script>
+
+</body>
+</html>

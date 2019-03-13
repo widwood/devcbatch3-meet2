@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	password: <input type="text" id="password"><br>
+	re-password: <input type="text" id="rePassword"><br>
+	<button onclick='cek()'>Submit</button><br>
+	<h1 id="hasil"></h1>
+	<script type="text/javascript">
+
+		let tahun = 2000;
+		while (tahun <= 2019){
+			//console.log(tahun);
+			tahun=tahun+1;
+		}
+
+		for (let i = 0; i < 10; i++) {
+			console.log(i);
+		}
+
+		function cek(){
+			var pass = document.getElementById("password").value;
+			var rePass = document.getElementById("rePassword").value;
+			console.log("pass :", pass, "rePass :", rePass);
+			if (pass == rePass) {
+				alert("Ya");
+			} else{
+				alert("Tidak");
+			}
+		}
+
+		var deret = 5;
+		var jumlah = 0;
+		while(deret > 0) { // Loop akan terus berjalan selama nilai deret masih di atas 0
+		  jumlah += deret; // Menambahkan nilai variable jumlah dengan angka deret
+		  deret--; // Mengubah nilai deret dengan mengurangi 1
+		  console.log('Jumlah saat ini: ' + jumlah)
+		}
+		console.log(jumlah);
+	</script>
+
+</body>
+</html>
